@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="contacto.css">
+    <script src="validar.js"></script>
+
+    <title>Formulario de contacto</title>
+</head>
+<body> <!--api utilizada para enviar el formulario de contacto FormSubmit-->
+    <form action="https://formsubmit.co/vibraritual@gmail.com" method="POST"" onsubmit="return validar();">
+        <h2>CONTACTO</h2>
+        <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
+        <input type="text" name="Apellido" id="apellido" placeholder="Apellido">
+        <input type="text" name="Email" id="email" placeholder="Email">
+        <input type="text" name="Telefóno" id="telefono" placeholder="Telefóno">
+        <textarea name="mensaje" id="mensaje"  placeholder="Escriba aquí su consulta"></textarea>
+        <input type="submit" value="Enviar" id="boton">
+
+         <input type="hidden" name="_next" value=" http://127.0.0.1:5500">
+         <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="_template" value="table">
+         <input type="hidden" name="_autoresponse" value="Gracias por contactarme">
+    </form>
+</body>
+</html>
